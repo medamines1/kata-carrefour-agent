@@ -1,0 +1,27 @@
+<main class="lease-container">
+  <h1>{{ title() }}</h1>
+
+  <form (ngSubmit)="submitLease()" #leaseForm="ngForm">
+    <label for="customerName">Customer name</label>
+    <input id="customerName" name="customerName" [(ngModel)]="customerName" required />
+
+    <label for="carModel">Car model</label>
+    <input id="carModel" name="carModel" [(ngModel)]="carModel" required />
+
+    <label for="durationMonths">Lease duration (months)</label>
+    <input
+      id="durationMonths"
+      type="number"
+      min="1"
+      name="durationMonths"
+      [(ngModel)]="durationMonths"
+      required
+    />
+
+    <button type="submit" [disabled]="leaseForm.invalid">Lease car</button>
+  </form>
+
+  @if (confirmation()) {
+    <p class="confirmation">{{ confirmation() }}</p>
+  }
+</main>
