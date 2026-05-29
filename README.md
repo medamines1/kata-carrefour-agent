@@ -7,10 +7,10 @@ This repository contains a minimal car leasing platform with:
 
 ## Runtime versions
 
-- Java: **17+**
+- Java: **25+**
 - Maven: **3.9+**
-- Node.js: **24+**
-- npm: **11+**
+- Node.js: **18.x**
+- npm: **10+**
 
 ## Run backend
 
