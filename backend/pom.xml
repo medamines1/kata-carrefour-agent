@@ -17,7 +17,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 <description>Car leasing backend API</description>
 
 <properties>
-<java.version>17</java.version>
+<java.version>25</java.version>
 </properties>
 
 <dependencies>
